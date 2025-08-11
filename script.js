@@ -33,6 +33,11 @@ const projectData = {
         <li>Designed and implemented the interactive restaurant layout system using a grid-based structure, allowing players to place and upgrade purchasable tiles.</li>
         <li>Imported and configured 3D character models and animations, ensuring proper integration with game logic and events.</li>
       </ul>
+    `,
+    actionsHTML: `
+      <a class="btn btn--sm" href="#" target="_blank" rel="noopener">Google Play</a>
+      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
     `
   },
   'era-of-war': {
@@ -53,6 +58,11 @@ const projectData = {
         <li>Integrated rewarded ads and an in-app purchase store for monetization.</li>
         <li>Worked on performance optimization to ensure smooth battles with many units on screen.</li>
       </ul>
+    `,
+    actionsHTML: `
+      <a class="btn btn--sm" href="#" target="_blank" rel="noopener">Google Play</a>
+      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
     `
   },
   'forward-assault': {
@@ -74,6 +84,10 @@ const projectData = {
         <li>Refactored UI screens for better performance and user experience.</li>
         <li>Assisted in debugging networking issues related to player synchronization.</li>
       </ul>
+    `,
+    actionsHTML: `
+      <a class="btn btn--sm" href="#" target="_blank" rel="noopener">App Store</a>
+      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
     `
   },
   'firefront': {
@@ -94,6 +108,9 @@ const projectData = {
         <li>Created systems for weapon handling, ballistics, and player abilities.</li>
         <li>Worked on optimizing performance for large maps and high player counts on mobile.</li>
       </ul>
+    `,
+    actionsHTML: `
+      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
     `
   },
   'darkzone': {
@@ -114,6 +131,9 @@ const projectData = {
         <li>Built the UI for inventory, character stats, and social features.</li>
         <li>Integrated a backend service for player accounts and asynchronous PvP battles.</li>
       </ul>
+    `,
+    actionsHTML: `
+      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
     `
   },
 };
@@ -150,7 +170,7 @@ function openModal(projectKey) {
 
   modalTitle.textContent = project.title;
   modalContent.innerHTML = project.description;
-  modalFooter.innerHTML = card.querySelector('.card__actions').innerHTML;
+  modalFooter.innerHTML = project.actionsHTML || ''; // Usamos los datos del objeto
   
   modal.classList.add('is-open');
   document.body.classList.add('modal-open'); // Evita el scroll del fondo

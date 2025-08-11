@@ -79,19 +79,18 @@ a:hover{text-decoration:underline}
 .section h2{font-size:clamp(22px,4vw,32px);margin:0 0 16px}
 .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
 /* --- Cambios para tarjetas de altura uniforme --- */
-.card{grid-column:span 12;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;aspect-ratio:1 / 1; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;}
+.card{grid-column:span 12;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;}
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0,0,0,.3);
 }
 .card img {
-  /* La imagen ocupa un espacio flexible y se ajusta sin recortar */
-  height: 55%;
-  object-fit: contain;
+  /* Forzamos una proporción para que todas las imágenes se vean uniformes */
+  aspect-ratio: 16 / 10; /* Puedes ajustar esta proporción (ej: 16/9, 4/3) */
+  object-fit: cover; /* Rellena el espacio de la imagen, recortando si es necesario */
   width: 100%;
-  background: rgba(0,0,0,0.2); /* Fondo para el letterboxing */
 }
-.card__body{padding:16px;display:flex;flex-direction:column;flex-grow:1;overflow:hidden}
+.card__body{padding: 16px; text-align: center;}
 .card__actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto} /* Empuja los botones al fondo */
 
 .tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}
