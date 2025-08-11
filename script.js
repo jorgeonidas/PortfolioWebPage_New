@@ -15,6 +15,11 @@ if (toggle && menu){
 const projectData = {
   'idle-sushi': {
     title: 'Idle Sushi 24/7 (2024)',
+    screenshots: [
+      'assets/IdleSushi.png',
+      'assets/IdleSushi.png',
+      'assets/IdleSushi.png'
+    ],
     description: `
       <p>Idle mobile game where players manage a sushi restaurant and automate income.</p>
       <p><strong>Platform(s):</strong> Android, iOS</p>
@@ -32,6 +37,11 @@ const projectData = {
   },
   'era-of-war': {
     title: 'Era of War (2024)',
+    screenshots: [
+      'assets/EraOfWar.png',
+      'assets/EraOfWar.png',
+      'assets/EraOfWar.png'
+    ],
     description: `
       <p>Strategy auto-battler where players build armies and progress through historical eras.</p>
       <p><strong>Platform(s):</strong> Android, iOS</p>
@@ -47,6 +57,11 @@ const projectData = {
   },
   'forward-assault': {
     title: 'Forward Assault (2023)',
+    screenshots: [
+      'assets/ForwardAssault.png',
+      'assets/ForwardAssault.png',
+      'assets/ForwardAssault.png'
+    ],
     description: `
       <p>Competitive first-person shooter with a focus on tactical gameplay.</p>
       <p><strong>Platform(s):</strong> Android, iOS</p>
@@ -62,44 +77,52 @@ const projectData = {
     `
   },
   'firefront': {
-    title: 'Forward Assault (2023)',
+    title: 'Firefront (Alpha, 2022)',
+    screenshots: [
+      'assets/Firefront.jpg',
+      'assets/Firefront.jpg',
+      'assets/Firefront.jpg'
+    ],
     description: `
-      <p>Competitive first-person shooter with a focus on tactical gameplay.</p>
-      <p><strong>Platform(s):</strong> Android, iOS</p>
-      <p><strong>My Role:</strong> Systems & UI Programmer</p>
+      <p>Large-scale multiplayer FPS built with Photon PUN 2, supporting up to 40 players on mobile devices.</p>
+      <p><strong>Platform(s):</strong> Mobile (Android/iOS)</p>
+      <p><strong>My Role:</strong> Lead Gameplay & Network Programmer</p>
       <strong>Contributions:</strong>
       <ul>
-        <li>Implemented a complete Battle Pass system with free and premium reward tracks.</li>
-        <li>Developed the weapon integration pipeline for adding new firearms and skins.</li>
-        <li>Integrated FMOD for dynamic and immersive audio experiences.</li>
-        <li>Refactored UI screens for better performance and user experience.</li>
-        <li>Assisted in debugging networking issues related to player synchronization.</li>
+        <li>Designed and implemented the core networking architecture using Photon PUN 2.</li>
+        <li>Developed vehicle physics and synchronized vehicle states across the network.</li>
+        <li>Created systems for weapon handling, ballistics, and player abilities.</li>
+        <li>Worked on optimizing performance for large maps and high player counts on mobile.</li>
       </ul>
     `
   },
   'darkzone': {
-    title: 'Forward Assault (2023)',
+    title: 'Darkzone: Idle RPG (2021)',
+    screenshots: [
+      'assets/Darkzone.jpeg',
+      'assets/Darkzone.jpeg',
+      'assets/Darkzone.jpeg'
+    ],
     description: `
-      <p>Competitive first-person shooter with a focus on tactical gameplay.</p>
+      <p>A 2D idle RPG with deep progression and asynchronous multiplayer features.</p>
       <p><strong>Platform(s):</strong> Android, iOS</p>
-      <p><strong>My Role:</strong> Systems & UI Programmer</p>
+      <p><strong>My Role:</strong> Full-Stack Unity Developer</p>
       <strong>Contributions:</strong>
       <ul>
-        <li>Implemented a complete Battle Pass system with free and premium reward tracks.</li>
-        <li>Developed the weapon integration pipeline for adding new firearms and skins.</li>
-        <li>Integrated FMOD for dynamic and immersive audio experiences.</li>
-        <li>Refactored UI screens for better performance and user experience.</li>
-        <li>Assisted in debugging networking issues related to player synchronization.</li>
+        <li>Developed AI systems for party members and enemy behaviors.</li>
+        <li>Implemented complex progression systems, including skill trees, gear, and crafting.</li>
+        <li>Built the UI for inventory, character stats, and social features.</li>
+        <li>Integrated a backend service for player accounts and asynchronous PvP battles.</li>
       </ul>
     `
   },
-  // ... puedes añadir los datos de 'firefront' y 'darkzone' aquí si quieres.
 };
 
 // 2. Seleccionar elementos del DOM
 const projectCards = document.querySelectorAll('.card[data-project]');
 const modal = document.getElementById('project-modal');
 const modalTitle = document.getElementById('modal-title');
+const modalGallery = document.getElementById('modal-gallery');
 const modalContent = document.getElementById('modal-content');
 const modalFooter = document.getElementById('modal-footer');
 const closeModalBtn = document.querySelector('.modal__close');
@@ -110,6 +133,20 @@ function openModal(projectKey) {
   const project = projectData[projectKey];
   const card = document.querySelector(`.card[data-project="${projectKey}"]`);
   if (!project || !card) return;
+
+  // Limpiar contenido anterior
+  modalGallery.innerHTML = '';
+
+  // Poblar la galería de screenshots
+  if (project.screenshots && project.screenshots.length > 0) {
+    project.screenshots.forEach(src => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = `${project.title} screenshot`;
+      img.loading = 'lazy';
+      modalGallery.appendChild(img);
+    });
+  }
 
   modalTitle.textContent = project.title;
   modalContent.innerHTML = project.description;
