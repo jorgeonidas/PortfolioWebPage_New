@@ -48,15 +48,18 @@ const projectData = {
       'assets/EraOfWar.png'
     ],
     description: `
-      <p>Strategy auto-battler where players build armies and progress through historical eras.</p>
+      <p>Auto-battler strategy game where players face off against AI-controlled armies across iconic historical eras.</p>
       <p><strong>Platform(s):</strong> Android, iOS</p>
-      <p><strong>My Role:</strong> Gameplay Programmer</p>
+      <p><strong>My Role:</strong> Gameplay & UI Programmer</p>
       <strong>Contributions:</strong>
       <ul>
-        <li>Developed the core combat system, including unit stats, abilities, and targeting logic.</li>
-        <li>Implemented the era progression system, unlocking new units and technologies.</li>
-        <li>Integrated rewarded ads and an in-app purchase store for monetization.</li>
-        <li>Worked on performance optimization to ensure smooth battles with many units on screen.</li>
+        <li>Developed combat systems including player abilities, skill activation logic, cooldown handling, and animation syncing.</li>
+        <li>Implemented dynamic unit spawning based on unit type, battle stage, and historical theme.</li>
+        <li>Designed and programmed the game’s progression system, allowing players to advance through multiple eras.</li>
+        <li>Built upgrade and unlock systems for units and player abilities, supporting stat scaling and tactical depth.</li>
+        <li>Integrated rewarded ads into core gameplay, enabling players to access free upgrades and extra resources.</li>
+        <li>Created an in-game store using Unity IAP where players can purchase in-game currency.</li>
+        <li>Contributed to UI and gameplay flows, enhancing clarity and feedback within the auto-battler loop.</li>
       </ul>
     `,
     actionsHTML: `
@@ -73,16 +76,13 @@ const projectData = {
       'assets/ForwardAssault.png'
     ],
     description: `
-      <p>Competitive first-person shooter with a focus on tactical gameplay.</p>
-      <p><strong>Platform(s):</strong> Android, iOS</p>
-      <p><strong>My Role:</strong> Systems & UI Programmer</p>
+      <p>Competitive first-person shooter featuring multiple game modes, including bomb defusal and team deathmatch.</p>
+      <p><strong>Platform(s):</strong> Android, iOS, Web (CrazyGames)</p>
+      <p><strong>My Role:</strong> UI/Systems Programmer</p>
       <strong>Contributions:</strong>
       <ul>
-        <li>Implemented a complete Battle Pass system with free and premium reward tracks.</li>
-        <li>Developed the weapon integration pipeline for adding new firearms and skins.</li>
-        <li>Integrated FMOD for dynamic and immersive audio experiences.</li>
-        <li>Refactored UI screens for better performance and user experience.</li>
-        <li>Assisted in debugging networking issues related to player synchronization.</li>
+        <li>Implemented key components of the battle pass system, including UI, backend integration, and monetization logic for premium tier purchases.</li>
+        <li>Helped troubleshoot and resolve gameplay-related bugs across different game modes to improve stability and player experience.</li>
       </ul>
     `,
     actionsHTML: `
@@ -91,49 +91,52 @@ const projectData = {
     `
   },
   'firefront': {
-    title: 'Firefront (Alpha, 2022)',
+    title: 'Firefront (Closed Alpha, 2022)',
     screenshots: [
       'assets/Firefront.jpg',
       'assets/Firefront.jpg',
       'assets/Firefront.jpg'
     ],
     description: `
-      <p>Large-scale multiplayer FPS built with Photon PUN 2, supporting up to 40 players on mobile devices.</p>
-      <p><strong>Platform(s):</strong> Mobile (Android/iOS)</p>
-      <p><strong>My Role:</strong> Lead Gameplay & Network Programmer</p>
+      <p>Multiplayer FPS where two teams compete for control over strategic objectives across large-scale maps featuring vehicles and a diverse arsenal of weapons.</p>
+      <p><strong>Platform(s):</strong> Android (Closed Alpha)</p>
+      <p><strong>My Role:</strong> Gameplay & UI Programmer</p>
       <strong>Contributions:</strong>
       <ul>
-        <li>Designed and implemented the core networking architecture using Photon PUN 2.</li>
-        <li>Developed vehicle physics and synchronized vehicle states across the network.</li>
-        <li>Created systems for weapon handling, ballistics, and player abilities.</li>
-        <li>Worked on optimizing performance for large maps and high player counts on mobile.</li>
+        <li>Implemented first and third-person character animation systems using blend trees and inverse kinematics to support fluid transitions and responsive controls.</li>
+        <li>Integrated new weapons by assembling 3D models, sound effects, and animations through the studio’s proprietary pipeline.</li>
+        <li>Crafted spatial and adaptive audio systems using FMOD to deliver immersive and reactive combat feedback.</li>
+        <li>Developed and optimized UI components for menus and in-game HUD, ensuring clarity and responsiveness on mobile devices.</li>
+        <li>Contributed to multiplayer systems including team logic, objective zone control, and networked object synchronization.</li>
+        <li>Assisted in vehicle mechanics and bot AI behavior across both online and offline gameplay modes.</li>
       </ul>
     `,
     actionsHTML: `
-      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+      <a class="btn btn--sm" href="#" target="_blank" rel="noopener">Visit project</a>
     `
   },
   'darkzone': {
-    title: 'Darkzone: Idle RPG (2021)',
+    title: 'Darkzone (2021)',
     screenshots: [
       'assets/Darkzone.jpeg',
       'assets/Darkzone.jpeg',
       'assets/Darkzone.jpeg'
     ],
     description: `
-      <p>A 2D idle RPG with deep progression and asynchronous multiplayer features.</p>
-      <p><strong>Platform(s):</strong> Android, iOS</p>
-      <p><strong>My Role:</strong> Full-Stack Unity Developer</p>
+      <p>Idle RPG where players assemble a team of heroes to complete missions and progress through a story-driven campaign, featuring social features and asynchronous multiplayer elements.</p>
+      <p><strong>Platform(s):</strong> Android, iOS (Delisted)</p>
+      <p><strong>My Role:</strong> Full Stack Unity Developer</p>
       <strong>Contributions:</strong>
       <ul>
-        <li>Developed AI systems for party members and enemy behaviors.</li>
-        <li>Implemented complex progression systems, including skill trees, gear, and crafting.</li>
-        <li>Built the UI for inventory, character stats, and social features.</li>
-        <li>Integrated a backend service for player accounts and asynchronous PvP battles.</li>
+        <li>Integrated character models and animations, and implemented AI behaviors for both player-controlled heroes and enemy units.</li>
+        <li>Developed core gameplay systems including abilities, character leveling, inventory management, and stat-based item upgrades.</li>
+        <li>Built user interfaces for the main menu and in-game HUD, focusing on usability and clean layout for idle progression tracking.</li>
+        <li>Implemented asynchronous multiplayer via socket-based communication, including matchmaking and a real-time chat system.</li>
+        <li>Developed backend integration for user accounts, enabling login, data persistence, and cross-session progress syncing.</li>
       </ul>
     `,
     actionsHTML: `
-      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+      <a class="btn btn--sm btn--ghost" href="https://www.youtube.com/watch?v=DG6gnsJbAXI" target="_blank" rel="noopener">Video</a>
     `
   },
 };
