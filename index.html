@@ -12,6 +12,7 @@
   <link rel="icon" href="assets/favicon.png" />
   <link rel="preload" href="assets/jetbrains-mono-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
   <header class="site-header">
@@ -31,16 +32,19 @@
     <section class="hero">
       <div class="hero__text">
         <h1>Jorge Hernández</h1>
-        <p class="lead">Unity Game Developer — Gameplay · UI/UX · AI · Networking · Monetization</p>
+        <p class="lead">Unity Game Developer</p>
         <div class="cta">
-          <a class="btn" href="mailto:jorgehdzbucci@gmail.com">Hire me</a>
-          <a class="btn btn--ghost" href="assets/Jorge_Hernandez_Unity_Game_Developer.pdf" target="_blank" rel="noopener">Download CV</a>
+          <!--<a class="btn" href="mailto:jorgehdzbucci@gmail.com">Hire me</a>-->
+          <a class="btn" href="assets/Jorge_Hernandez_Unity_Game_Developer.pdf" target="_blank" rel="noopener">Download CV</a>
         </div>
-        <div class="meta">
-          <a href="https://www.linkedin.com/in/jorgehbucci/" target="_blank" rel="noopener">LinkedIn</a>
-          <span>·</span>
-          <a href="https://github.com/jorgeonidas" target="_blank" rel="noopener">GitHub</a>
-        </div>
+      <div class="meta">
+        <a href="https://www.linkedin.com/in/jorgehbucci/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/jorgeonidas" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
       </div>
       <picture class="hero__media">
         <img class="hero__avatar" src="assets/FotoPerfilBosque.jpg" alt="Foto de perfil de Jorge Hernández" />
@@ -49,15 +53,15 @@
 
     <section id="about" class="section">
       <h2>About me</h2>
-      <p>Unity developer with 7+ years of experience and several published titles (casual and multiplayer). I work end-to-end: gameplay, UI, animations, AI, physics, and integrations (Firebase, Unity Ads/IAP, FMOD, Photon). I have optimized projects with DOTS/ECS and the profiler, and I collaborate comfortably in remote teams.</p>
+      <p>Unity developer with published games from casual to multiplayer genres, experienced in handling projects of all sizes, from quick prototypes to full-scale productions. I work across various areas of development, including game mechanics programming, UI/UX implementation, animations, artificial intelligence, physics, and integration of external tools. My goal is to provide clean, maintainable solutions tailored to your project’s scope, timeline, and vision.</p>
     </section>
 
     <section id="projects" class="section">
       <h2>Projects</h2>
       <div class="grid">
         <!-- Card 1 -->
-        <article class="card">
-          <img src="assets/idle-sushi-placeholder.jpg" alt="Idle Sushi 24/7 — screenshot" loading="lazy">
+        <article class="card" data-project="idle-sushi">
+          <img src="assets/IdleSushi.png" alt="Idle Sushi 24/7 — screenshot" loading="lazy">
           <div class="card__body">
             <h3>Idle Sushi 24/7 (2024)</h3>
             <p>Restaurant idle game. Income logic, UI (Figma→uGUI), monetization (Ads/IAP), customer AI.</p>
@@ -69,8 +73,8 @@
           </div>
         </article>
         <!-- Card 2 -->
-        <article class="card">
-          <img src="assets/era-of-war-placeholder.jpg" alt="Era of War — screenshot" loading="lazy">
+        <article class="card" data-project="era-of-war">
+          <img src="assets/EraOfWar.png" alt="Era of War — screenshot" loading="lazy">
           <div class="card__body">
             <h3>Era of War (2024)</h3>
             <p>Strategy auto-battler. Combat systems, progression through eras, rewarded ads, and IAP store.</p>
@@ -82,8 +86,8 @@
           </div>
         </article>
         <!-- Card 3 -->
-        <article class="card">
-          <img src="assets/forward-assault-placeholder.jpg" alt="Forward Assault — screenshot" loading="lazy">
+        <article class="card" data-project="forward-assault">
+          <img src="assets/ForwardAssault.png" alt="Forward Assault — screenshot" loading="lazy">
           <div class="card__body">
             <h3>Forward Assault (2023)</h3>
             <p>Competitive FPS. Battle pass, weapon integration, FMOD audio, UI, and networking.</p>
@@ -94,8 +98,8 @@
           </div>
         </article>
         <!-- Card 4 -->
-        <article class="card">
-          <img src="assets/firefront-placeholder.jpg" alt="Firefront — screenshot" loading="lazy">
+        <article class="card" data-project="firefront">
+          <img src="assets/Firefront.jpg" alt="Firefront — screenshot" loading="lazy">
           <div class="card__body">
             <h3>Firefront (Alpha, 2022)</h3>
             <p>Multiplayer FPS (Photon PUN 2) with vehicles and large maps. Up to 40 players on mobile.</p>
@@ -105,8 +109,8 @@
           </div>
         </article>
         <!-- Card 5 -->
-        <article class="card">
-          <img src="assets/darkzone-placeholder.jpg" alt="Darkzone — screenshot" loading="lazy">
+        <article class="card" data-project="darkzone">
+          <img src="assets/Darkzone.jpeg" alt="Darkzone — screenshot" loading="lazy">
           <div class="card__body">
             <h3>Darkzone: Idle RPG (2021)</h3>
             <p>2D idle RPG. AI, progression systems, UI, asynchronous multiplayer, account backend.</p>
@@ -143,6 +147,22 @@
   <footer class="site-footer">
     <small>© <span id="yr"></span> Jorge Hernández Bucci — Made with HTML/CSS and deployed on Netlify.</small>
   </footer>
+
+  <!-- Modal Structure -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <header class="modal__header">
+          <h2 id="modal-title" class="modal__title"></h2>
+          <button class="modal__close" aria-label="Close modal">&times;</button>
+        </header>
+        <main id="modal-content" class="modal__content">
+          <!-- Dynamic content goes here -->
+        </main>
+        <footer id="modal-footer" class="modal__footer"></footer>
+      </div>
+    </div>
+  </div>
 
   <script type="application/ld+json">
   {
