@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jorge Hernández Bucci — Unity Game Developer</title>
+  <meta name="description" content="Portafolio de Jorge Hernández Bucci, Unity Game Developer. Proyectos móviles y multijugador, gameplay, UI, IA, monetización." />
+  <meta property="og:title" content="Jorge Hernández Bucci — Unity Game Developer">
+  <meta property="og:description" content="Proyectos en Unity (2D/3D): gameplay, UI/UX, IA, networking y optimización.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/cover.png">
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preload" href="assets/jetbrains-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">JH</a>
+    <nav class="nav" aria-label="Primary">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu" class="nav__list">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__text">
+        <h1>Jorge Hernández Bucci</h1>
+        <p class="lead">Unity Game Developer — Gameplay · UI/UX · IA · Networking · Monetización</p>
+        <div class="cta">
+          <a class="btn" href="mailto:jorgehdzbucci@gmail.com">Contrátame</a>
+          <a class="btn btn--ghost" href="assets/CV_Jorge_Hernandez.pdf" target="_blank" rel="noopener">Descargar CV</a>
+        </div>
+        <div class="meta">
+          <a href="https://www.linkedin.com/in/jorgehbucci/" target="_blank" rel="noopener">LinkedIn</a>
+          <span>·</span>
+          <a href="https://github.com/jorgeonidas" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <picture class="hero__media">
+        <img src="assets/cover.png" alt="Capturas de proyectos en Unity" />
+      </picture>
+    </section>
+
+    <section id="about" class="section">
+      <h2>Sobre mí</h2>
+      <p>Desarrollador Unity con 7+ años de experiencia y varios títulos publicados (casual y multijugador). Trabajo de punta a punta: gameplay, UI, animaciones, IA, física e integraciones (Firebase, Unity Ads/IAP, FMOD, Photon). He optimizado proyectos con DOTS/ECS y profiler, y colaboro cómodamente en equipos remotos.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Proyectos</h2>
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <img src="assets/idle-sushi-placeholder.jpg" alt="Idle Sushi 24/7 — captura" loading="lazy">
+          <div class="card__body">
+            <h3>Idle Sushi 24/7 (2024)</h3>
+            <p>Idle game de restaurante. Lógica de ingresos, UI (Figma→uGUI), monetización (Ads/IAP), AI de clientes.</p>
+            <div class="card__actions">
+              <a class="btn btn--sm" href="#" target="_blank" rel="noopener">Google Play</a>
+              <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+              <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="assets/era-of-war-placeholder.jpg" alt="Era of War — captura" loading="lazy">
+          <div class="card__body">
+            <h3>Era of War (2024)</h3>
+            <p>Auto-battler de estrategia. Sistemas de combate, progresión por eras, anuncios recompensados y tienda IAP.</p>
+            <div class="card__actions">
+              <a class="btn btn--sm" href="#" target="_blank" rel="noopener">Google Play</a>
+              <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+              <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <img src="assets/forward-assault-placeholder.jpg" alt="Forward Assault — captura" loading="lazy">
+          <div class="card__body">
+            <h3>Forward Assault (2023)</h3>
+            <p>FPS competitivo. Pase de batalla, integración de armas, audio con FMOD, UI y networking.</p>
+            <div class="card__actions">
+              <a class="btn btn--sm" href="#" target="_blank" rel="noopener">App Store</a>
+              <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card">
+          <img src="assets/firefront-placeholder.jpg" alt="Firefront — captura" loading="lazy">
+          <div class="card__body">
+            <h3>Firefront (Alpha, 2022)</h3>
+            <p>FPS multijugador (Photon PUN 2) con vehículos y mapas grandes. Hasta 40 jugadores en mobile.</p>
+            <div class="card__actions">
+              <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="card">
+          <img src="assets/darkzone-placeholder.jpg" alt="Darkzone — captura" loading="lazy">
+          <div class="card__body">
+            <h3>Darkzone: Idle RPG (2021)</h3>
+            <p>RPG idle 2D. IA, sistemas de progreso, UI, multijugador asíncrono, backend de cuentas.</p>
+            <div class="card__actions">
+              <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="tags">
+        <li>Unity 2D/3D</li><li>C# (OOP)</li><li>Gameplay</li><li>UI/uGUI</li><li>IA</li>
+        <li>Photon PUN 2</li><li>FMOD</li><li>Firebase</li><li>Unity Ads/IAP</li><li>DOTS/ECS</li>
+        <li>Git · GitHub</li><li>Profiler</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contacto</h2>
+      <p>¿Hablamos? <a href="mailto:jorgehdzbucci@gmail.com">jorgehdzbucci@gmail.com</a> · Montevideo, Uruguay</p>
+      <form name="contact" method="POST" data-netlify="true" class="contact">
+        <input type="hidden" name="form-name" value="contact">
+        <label>Nombre<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Mensaje<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="yr"></span> Jorge Hernández Bucci — Hecho con HTML/CSS y desplegado en Netlify.</small>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jorge Hernández Bucci",
+    "jobTitle": "Unity Game Developer",
+    "url": "https://example.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/jorgehbucci/",
+      "https://github.com/jorgeonidas"
+    ]
+  }
+  </script>
+  <script src="script.js" defer></script>
+</body>
+</html>

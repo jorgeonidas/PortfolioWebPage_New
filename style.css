@@ -1,0 +1,96 @@
+/* Minimal, limpio, responsive. */
+:root{
+  --bg: #0b0d10;
+  --card: #12161c;
+  --text: #e6e8ea;
+  --muted: #aab2bd;
+  --brand: #7c94ff;
+  --brand-2: #92ffd0;
+  --border: #1d2330;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.25);
+  --maxw: 1100px;
+}
+
+@font-face{
+  font-family: "JetBrains Mono";
+  src: url("assets/jetbrains-mono-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "JetBrains Mono", Arial, sans-serif;
+  background: radial-gradient(1200px 1200px at 10% -10%, rgba(124,148,255,.15), transparent 60%),
+              radial-gradient(1000px 1000px at 110% 10%, rgba(146,255,208,.12), transparent 55%),
+              var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+img{max-width:100%;display:block;border-radius:12px}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.container{max-width:var(--maxw);margin-inline:auto;padding-inline:20px}
+
+.site-header{
+  position:sticky;top:0;z-index:10;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 20px;
+  background: rgba(11,13,16,.7);
+  border-bottom:1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+.brand{display:inline-flex;align-items:center;justify-content:center;
+  width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0a0b0e;font-weight:700;box-shadow: var(--shadow) }
+.nav__toggle{display:none}
+.nav__list{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+.nav__list a{padding:.5rem .75rem;border-radius:10px}
+.nav__list a:hover{background:rgba(255,255,255,.06);text-decoration:none}
+
+.hero{display:grid;gap:30px;grid-template-columns:1.2fr .8fr;align-items:center;max-width:var(--maxw);margin:40px auto;padding-inline:20px}
+.hero__text h1{margin:0 0 8px;font-size:clamp(28px,5vw,44px);line-height:1.1}
+.lead{color:var(--muted);margin:0 0 18px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}
+.meta{display:flex;gap:10px;color:var(--muted)}
+
+.btn{display:inline-block;padding:.7rem 1rem;background:linear-gradient(135deg,var(--brand),var(--brand-2));border:none;color:#0a0b0e;font-weight:700;border-radius:12px;box-shadow: var(--shadow)}
+.btn--ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+.btn--sm{padding:.45rem .7rem;font-size:.95rem}
+
+.section{max-width:var(--maxw);margin:50px auto;padding:0 20px}
+.section h2{font-size:clamp(22px,4vw,32px);margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.card{grid-column:span 12;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.card__body{padding:16px}
+.card__actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}
+.tags li{background:rgba(255,255,255,.06);border:1px solid var(--border);padding:.45rem .7rem;border-radius:999px}
+
+.contact{display:grid;gap:10px;max-width:520px}
+.contact input,.contact textarea{width:100%;padding:.7rem .8rem;background:#0f1217;border:1px solid var(--border);border-radius:10px;color:var(--text)}
+
+.site-footer{max-width:var(--maxw);margin:40px auto 30px;padding:0 20px;color:var(--muted)}
+
+@media (prefers-color-scheme: light){
+  :root{ --bg:#f7f8fb; --card:#ffffff; --text:#0a0b0e; --muted:#5a616a; --border:#e8eaf0 }
+  .site-header{background:#fff}
+  .btn{color:white}
+}
+
+@media (max-width: 880px){
+  .hero{grid-template-columns:1fr}
+  .nav__toggle{display:inline-block;background:none;border:1px solid var(--border);border-radius:10px;padding:.35rem .6rem;color:var(--text)}
+  .nav__list{display:none;flex-direction:column;position:absolute;right:10px;top:58px;background:var(--card);border:1px solid var(--border);padding:10px;border-radius:12px}
+  .nav__list.open{display:flex}
+  .card{grid-column:span 12}
+}
+@media (min-width: 700px){
+  .card{grid-column:span 6}
+}
