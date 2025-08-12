@@ -16,9 +16,9 @@ const projectData = {
   'idle-sushi': {
     title: 'Idle Sushi 24/7 (2024)',
     screenshots: [
-      'assets/IdleSushi.png',
-      'assets/IdleSushi.png',
-      'assets/IdleSushi.png'
+      'assets/IdleSushi1.jpg',
+      'assets/IdleSushi2.jpg',
+      'assets/IdleSushi3.jpg'
     ],
     description: `
       <p>Idle mobile game where players manage a sushi restaurant and automate income.</p>
@@ -35,17 +35,18 @@ const projectData = {
       </ul>
     `,
     actionsHTML: `
-      <a class="btn btn--sm" href="#" target="_blank" rel="noopener">Google Play</a>
-      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+      <a class="btn btn--sm" href="https://play.google.com/store/apps/details?id=com.blayzegames.idlesushi" target="_blank" rel="noopener">Google Play</a>
+    `/*
+          <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
       <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
-    `
+     */
   },
   'era-of-war': {
     title: 'Era of War (2024)',
     screenshots: [
-      'assets/EraOfWar.png',
-      'assets/EraOfWar.png',
-      'assets/EraOfWar.png'
+      'assets/EraOfWar1.png',
+      'assets/EraOfWar2.jpg',
+      'assets/EraOfWar3.png'
     ],
     description: `
       <p>Auto-battler strategy game where players face off against AI-controlled armies across iconic historical eras.</p>
@@ -63,17 +64,15 @@ const projectData = {
       </ul>
     `,
     actionsHTML: `
-      <a class="btn btn--sm" href="#" target="_blank" rel="noopener">Google Play</a>
-      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
-      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn--sm" href="https://play.google.com/store/apps/details?id=com.blayzegames.defendyourcastle" target="_blank" rel="noopener">Google Play</a>
     `
   },
   'forward-assault': {
     title: 'Forward Assault (2023)',
     screenshots: [
-      'assets/ForwardAssault.png',
-      'assets/ForwardAssault.png',
-      'assets/ForwardAssault.png'
+      'assets/FASC1.jpg',
+      'assets/FACS2.jpg',
+      'assets/FASC3.jpg'
     ],
     description: `
       <p>Competitive first-person shooter featuring multiple game modes, including bomb defusal and team deathmatch.</p>
@@ -86,16 +85,15 @@ const projectData = {
       </ul>
     `,
     actionsHTML: `
-      <a class="btn btn--sm" href="#" target="_blank" rel="noopener">App Store</a>
-      <a class="btn btn--sm btn--ghost" href="#" target="_blank" rel="noopener">Video</a>
+      <a class="btn btn--sm" href="https://play.google.com/store/apps/details?id=com.blayzegames.newfps" target="_blank" rel="noopener">Google Play</a>
     `
   },
   'firefront': {
     title: 'Firefront (Closed Alpha, 2022)',
     screenshots: [
-      'assets/Firefront.jpg',
-      'assets/Firefront.jpg',
-      'assets/Firefront.jpg'
+      'assets/Firefront1.jpg',
+      'assets/Firefront2.jpg',
+      'assets/Firefront3.jpg'
     ],
     description: `
       <p>Multiplayer FPS where two teams compete for control over strategic objectives across large-scale maps featuring vehicles and a diverse arsenal of weapons.</p>
@@ -112,15 +110,15 @@ const projectData = {
       </ul>
     `,
     actionsHTML: `
-      <a class="btn btn--sm" href="#" target="_blank" rel="noopener">Visit project</a>
+      <a class="btn btn--sm btn--ghost" href="https://www.youtube.com/watch?v=lcwsBb1azbs" target="_blank" rel="noopener">Video</a>
     `
   },
   'darkzone': {
     title: 'Darkzone (2021)',
     screenshots: [
-      'assets/Darkzone.jpeg',
-      'assets/Darkzone.jpeg',
-      'assets/Darkzone.jpeg'
+      'assets/Darkzone1.jpg',
+      'assets/Darkzone2.jpg',
+      'assets/Darkzone3.jpg'
     ],
     description: `
       <p>Idle RPG where players assemble a team of heroes to complete missions and progress through a story-driven campaign, featuring social features and asynchronous multiplayer elements.</p>
