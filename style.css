@@ -22,6 +22,12 @@
 
 *{box-sizing:border-box}
 html,body{height:100%}
+/* Añadimos un desplazamiento superior al hacer scroll y una animación suave.
+Esto evita que el header fijo oculte los títulos de las secciones. */
+html {
+  scroll-padding-top: 80px; /* Ajusta este valor si la altura del header cambia */
+  scroll-behavior: smooth;
+}
 body{
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, "JetBrains Mono", Arial, sans-serif;
