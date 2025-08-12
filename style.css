@@ -186,6 +186,20 @@ a:hover{text-decoration:underline}
   gap: 10px;
 }
 
+#contact p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#contact a {
+  font-weight: 600;
+  color: var(--brand);
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
 @media (prefers-color-scheme: light){
   :root{ --bg:#f7f8fb; --card:#ffffff; --text:#0a0b0e; --muted:#5a616a; --border:#e8eaf0 }
   .site-header{background:#fff}
