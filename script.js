@@ -137,6 +137,29 @@ const projectData = {
       <a class="btn btn--sm btn--ghost" href="https://www.youtube.com/watch?v=DG6gnsJbAXI" target="_blank" rel="noopener">Video</a>
     `
   },
+  // --- Ejemplo de Proyecto Personal ---
+  'cyber-rider': {
+    title: 'Cyber Rider (2025)',
+    screenshots: [
+      'assets/CyberRiderCollision.jpg',
+      'assets/CyberRiderPaintShop.jpg'
+    ],
+    description: `
+      <p>Endless runner game set in a cyberpunk world, where the player rides a motorcycle, dodging obstacles, collecting coins, and activating power-ups to reach the longest possible distance.</p>
+      <p><strong>Genre:</strong> Endless Runner</p>
+      <p><strong>Platform(s):</strong> WebGL (CrazyGames)</p>
+      <strong>Key Features:</strong>
+      <ul>
+        <li>Vehicle controls with collision detection.</li>
+        <li>Progression and scoring system.</li>
+        <li>Procedural obstacle and environment spawning using Object Pooling for optimized performance.</li>
+        <li>In-game coin shop where players can purchase cosmetic items.</li>
+      </ul>
+    `,
+    actionsHTML: `
+      <a class="btn btn--sm" href="https://www.crazygames.com/game/cyber-rider" target="_blank" rel="noopener">Play Crazy Games</a>
+    `
+  },
 };
 
 // 2. Seleccionar elementos del DOM
