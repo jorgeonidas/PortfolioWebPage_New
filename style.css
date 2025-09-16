@@ -206,11 +206,11 @@ a:hover{text-decoration:underline}
   text-decoration: underline;
 }
 
-@media (prefers-color-scheme: light){
+/* @media (prefers-color-scheme: light){
   :root{ --bg:#f7f8fb; --card:#ffffff; --text:#0a0b0e; --muted:#5a616a; --border:#e8eaf0 }
   .site-header{background:#fff}
   .btn{color:white}
-}
+} */
 
 @media (max-width: 880px){
   .hero{grid-template-columns:1fr;gap:40px;text-align:center}
