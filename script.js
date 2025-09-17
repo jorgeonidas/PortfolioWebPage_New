@@ -157,7 +157,7 @@ const projectData = {
       </ul>
     `,
     actionsHTML: `
-      <a class="btn btn--sm" href="https://www.crazygames.com/game/cyber-rider" target="_blank" rel="noopener">Play Crazy Games</a>
+      <a class="btn btn--sm" href="https://play.unity.com/en/games/b04564f5-e804-47d6-be58-1bd9a1677037/cyber-rider" target="_blank" rel="noopener">Unity Play</a>
     `
   },
 };
