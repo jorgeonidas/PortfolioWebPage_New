@@ -23,7 +23,7 @@ const projectData = {
     description: `
       <p>Idle mobile game where players manage a sushi restaurant and automate income.</p>
       <p><strong>Platform(s):</strong> Android, iOS</p>
-      <p><strong>My Role:</strong> Gameplay & UI Programmer</p>
+      <p><strong>My Role:</strong> Unity Game Developer.</p>
       <strong>Contributions:</strong>
       <ul>
         <li>Developed core gameplay systems, including income loops, upgrade mechanics, and player progression balancing.</li>
@@ -51,7 +51,7 @@ const projectData = {
     description: `
       <p>Auto-battler strategy game where players face off against AI-controlled armies across iconic historical eras.</p>
       <p><strong>Platform(s):</strong> Android, iOS</p>
-      <p><strong>My Role:</strong> Gameplay & UI Programmer</p>
+      <p><strong>My Role:</strong> Unity Game Developer.</p>
       <strong>Contributions:</strong>
       <ul>
         <li>Developed combat systems including player abilities, skill activation logic, cooldown handling, and animation syncing.</li>
@@ -77,7 +77,7 @@ const projectData = {
     description: `
       <p>Competitive first-person shooter featuring multiple game modes, including bomb defusal and team deathmatch.</p>
       <p><strong>Platform(s):</strong> Android, iOS, Web (CrazyGames)</p>
-      <p><strong>My Role:</strong> UI/Systems Programmer</p>
+      <p><strong>My Role:</strong> Unity Game Developer.</p>
       <strong>Contributions:</strong>
       <ul>
         <li>Implemented key components of the battle pass system, including UI, backend integration, and monetization logic for premium tier purchases.</li>
@@ -98,7 +98,7 @@ const projectData = {
     description: `
       <p>Multiplayer FPS where two teams compete for control over strategic objectives across large-scale maps featuring vehicles and a diverse arsenal of weapons.</p>
       <p><strong>Platform(s):</strong> Android (Closed Alpha)</p>
-      <p><strong>My Role:</strong> Gameplay & UI Programmer</p>
+      <p><strong>My Role:</strong> Unity Game Developer.</p>
       <strong>Contributions:</strong>
       <ul>
         <li>Implemented first and third-person character animation systems using blend trees and inverse kinematics to support fluid transitions and responsive controls.</li>
@@ -123,7 +123,7 @@ const projectData = {
     description: `
       <p>Idle RPG where players assemble a team of heroes to complete missions and progress through a story-driven campaign, featuring social features and asynchronous multiplayer elements.</p>
       <p><strong>Platform(s):</strong> Android, iOS (Delisted)</p>
-      <p><strong>My Role:</strong> Full Stack Unity Developer</p>
+      <p><strong>My Role:</strong> Unity Game Developer.</p>
       <strong>Contributions:</strong>
       <ul>
         <li>Integrated character models and animations, and implemented AI behaviors for both player-controlled heroes and enemy units.</li>
