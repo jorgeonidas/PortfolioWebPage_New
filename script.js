@@ -147,7 +147,7 @@ const projectData = {
     description: `
       <p>Endless runner game set in a cyberpunk world, where the player rides a motorcycle, dodging obstacles, collecting coins, and activating power-ups to reach the longest possible distance.</p>
       <p><strong>Genre:</strong> Endless Runner</p>
-      <p><strong>Platform(s):</strong> WebGL (CrazyGames)</p>
+      <p><strong>Platform(s):</strong> WebGL</p>
       <strong>Key Features:</strong>
       <ul>
         <li>Vehicle controls with collision detection.</li>
