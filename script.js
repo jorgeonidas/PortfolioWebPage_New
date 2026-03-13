@@ -137,6 +137,31 @@ const projectData = {
       <a class="btn btn--sm btn--ghost" href="https://www.youtube.com/watch?v=DG6gnsJbAXI" target="_blank" rel="noopener">Video</a>
     `
   },
+  'galaxy-gunner': {
+    title: 'Galaxy Gunner',
+    screenshots: [
+      'assets/GalaxyGunner1.jpg',
+      'assets/GalaxyGunner2.jpg',
+      'assets/GalaxyGunner3.jpg'
+    ],
+    description: `
+      <p>Arcade side-scroller shooter where the player must withstand waves of enemies and bosses to achieve the highest possible score.</p>
+      <p><strong>Platform(s):</strong> Triump Arcade (iOS)</p>
+      <p><strong>My Role:</strong> Unity Game Developer.</p>
+      <strong>Contributions:</strong>
+      <ul>
+        <li>Designed and implemented the core game loop focused on wave-based survival and score chasing.</li>
+        <li>Developed responsive player movement and shooting mechanics for touch controls.</li>
+        <li>Created the enemy and wave spawner system with gradually increasing difficulty.</li>
+        <li>Built procedural scenario generation to keep each run fresh and replayable.</li>
+        <li>Implemented the item and power-up system that activates temporary abilities when collecting pickups.</li>
+        <li>Integrated VFX and SFX to enhance game feel and combat feedback.</li>
+      </ul>
+    `,
+    actionsHTML: `
+      <a class="btn btn--sm btn--ghost" href="https://youtube.com/shorts/Hkdcxbb3GOw?feature=share" target="_blank" rel="noopener">Video</a>
+    `
+  },
   // --- Ejemplo de Proyecto Personal ---
   'cyber-rider': {
     title: 'Cyber Rider (2025)',
