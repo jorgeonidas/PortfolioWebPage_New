@@ -140,9 +140,9 @@ const projectData = {
   'galaxy-gunner': {
     title: 'Galaxy Gunner',
     screenshots: [
-      'assets/GalaxyGunner1.jpg',
-      'assets/GalaxyGunner2.jpg',
-      'assets/GalaxyGunner3.jpg'
+      'assets/GalaxyGunner/GG1.png',
+      'assets/GalaxyGunner/GG2.png',
+      'assets/GalaxyGunner/GG3.png'
     ],
     description: `
       <p>Arcade side-scroller shooter where the player must withstand waves of enemies and bosses to achieve the highest possible score.</p>
