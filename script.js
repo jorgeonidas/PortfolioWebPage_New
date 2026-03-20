@@ -138,7 +138,7 @@ const projectData = {
     `
   },
   'galaxy-gunner': {
-    title: 'Galaxy Gunner',
+    title: 'Galaxy Gunner (2026)',
     screenshots: [
       'assets/GalaxyGunner/GG1.png',
       'assets/GalaxyGunner/GG2.png',
